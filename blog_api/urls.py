@@ -6,4 +6,5 @@ app_name = 'blog_api'
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
     path('<int:pk>/', views.PostDetail.as_view(), name='blog'),
+    # path('rep/', views.rep)
 ]
